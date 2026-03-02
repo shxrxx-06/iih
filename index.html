@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./logo.png">
+    <title>Industry Innovation'26 Hackathon</title>
+
+    <!-- PERFORMANCE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Main UI Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./sty.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+</head>
+
+<body>
+<canvas id="network-bg"></canvas>
+    <div id="scroll-progress"></div>
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <nav id="navbar">
+        <a href="#" class="nav-logo">
+            <i class="fa-solid fa-dharmachakra logo-icon"></i>
+            <h2>IIH'26</h2>
+        </a>
+        <div class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#tracks" class="nav-link">Tracks</a>
+            <a href="#details" class="nav-link">Details</a>
+        </div>
+        <button class="btn btn-primary" onclick="document.getElementById('regist').scrollIntoView({behavior:'smooth'})" style="padding: 10px 28px; font-size: 15px;">Register <i
+                class="fa-solid fa-rocket"></i></button>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="badge"><i class="fa-solid fa-bolt text-warning" style="color: #fbbf24; margin-right: 8px;"></i>
+            Flagship Edition | National Level Hackathon</div>
+        <h1><span class="gradient-text">Innovation Hackathon</span><br>Industry'26</h1>
+        <p>Tamil Nadu Industrial Ecosystem's premier 24-hour hackathon. Build the future of <span
+                class="typewriter-text" id="typewriter">Smart Manufacturing</span><span class="cursor">|</span></p>
+                <div class="countdown">
+    <div class="countdown-ultra">
+    <div class="time">
+        <span id="days">00</span>
+        <small>DAYS</small>
+    </div>
+    <div class="time">
+        <span id="hours">00</span>
+        <small>HOURS</small>
+    </div>
+    <div class="time">
+        <span id="minutes">00</span>
+        <small>MINUTES</small>
+    </div>
+    <div class="time">
+        <span id="seconds">00</span>
+        <small>SECONDS</small>
+    </div>
+</div>
+        <div class="hero-btns">
+           <button class="btn btn-primary" 
+        onclick="document.getElementById('regist').scrollIntoView({behavior:'smooth'})">
+    Register Your Team <i class="fa-solid fa-arrow-right"></i>
+</button>
+
+            <a href="#tracks" class="btn btn-secondary">
+                Explore Tracks <i class="fa-solid fa-compass"></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="about" class="reveal reveal-scale">
+        <div class="section-header">
+            <span class="section-subtitle">Event Overview</span>
+            <h2 class="section-title">Where Innovation Meets Industry</h2>
+        </div>
+        <p>
+            A National Level 24-Hour Hackathon organized by Startup Cell, Sathyabama Institute of Science and
+            Technology.
+            Join top developers, designers, and innovators to solve real-world industrial challenges.
+            Push the boundaries of what's possible and secure exclusive internships.
+        </p>
+
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-num counter" data-target="24">00</div>
+                <div class="stat-label">Hours of Coding</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num counter" data-target="6">00</div>
+                <div class="stat-label">Industry Tracks</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num"><span class="counter" data-target="4">00</span>+</div>
+                <div class="stat-label">Govt & Industry Collaborators</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tracks" class="tracks-section">
+
+    <h2 class="section-title">Innovation Tracks</h2>
+<br>
+    <div class="tracks-container">
+
+        <!-- TRACK A -->
+        <div class="track"> 
+            <div class="track-title">Smart Manufacturing<br> & Auto Industry 4.0</div>
+            <div class="track-content">
+                <h6 style="color: white; font-weight:bolder">TRACK  A</h6>
+                <h2>Smart Manufacturing & Auto Industry 4.0</h2>
+
+                <p><b>HIGH PRIORITY FOR TAMIL NADU – 2026</b></p>
+
+                <p><b>Tamil Nadu Focus Industries:</b> Automobile Manufacturing, EV Production, Auto Components, MSMEs</p>
+
+                <p><b>Key TN-Based Companies / Clusters:</b> Hyundai (Sriperumbudur), Renault-Nissan (Oragadam), TVS Motor (Hosur), Ashok Leyland (Chennai), Daimler India Commercial Vehicles, Royal Enfield, Sundaram Clayton.</p>
+
+                <p><b>Problem Focus:</b> Predictive maintenance, digital twin modeling, quality defect detection, production optimization for automotive lines.</p>
+
+                <p><b>Expected Output:</b> AI-enabled manufacturing dashboard or digital twin simulation.</p>
+            </div>
+        </div>
+
+        <!-- TRACK B -->
+        <div class="track">
+            <div class="track-title">Electric Vehicles & <br>Battery Analytics</div>
+            <div class="track-content">
+                <h6 style="color: white; font-weight:bolder">TRACK      B</h6>
+                <h2>Electric Vehicles & Battery Analytics</h2>
+                
+
+                <p><b>HIGH PRIORITY FOR TAMIL NADU – 2026</b></p>
+
+                <p><b>Tamil Nadu Focus Industries:</b> EV Manufacturing, Battery Management Systems, Charging Infrastructure</p>
+
+                <p><b>Key TN-Based Companies / Clusters:</b> Ola Electric (Hosur), Ather Energy (Hosur), Tata Motors EV, TVS iQube Division, Exide Industries, Amara Raja Batteries</p>
+
+                <p><b>Problem Focus:</b> Battery health monitoring, charging optimization, EV fleet analytics, energy efficiency tracking.</p>
+
+                <p><b>Expected Output:</b> Battery analytics model or EV performance dashboard.</p>
+            </div>
+        </div>
+
+        <!-- TRACK C -->
+        <div class="track">
+            <div class="track-title">SupplyChain &<br> Logistics Optimization</div>
+            <div class="track-content">
+            <h6 style="color: white; font-weight:bolder">TRACK      C</h6>
+                <h2>Supply Chain & Logistics Optimization</h2>
+
+                <p><b>HIGH PRIORITY FOR TAMIL NADU – 2026</b></p>
+
+                <p><b>Tamil Nadu Focus Industries:</b> Automotive Supply Chain, Port Logistics, Industrial Warehousing</p>
+
+                <p><b>Key TN-Based Companies / Clusters:</b> Chennai Port Trust, Ennore Port, DP World, TVS Logistics, DHL Supply Chain (TN Operations)</p>
+
+                <p><b>Problem Focus:</b> Supply chain visibility gaps, inventory inefficiencies, last-mile delivery delays.</p>
+
+                <p><b>Expected Output:</b> Supply chain optimization platform or logistics analytics model.</p>
+            </div>
+        </div>
+
+        <!-- TRACK D -->
+        <div class="track">
+            <div class="track-title">Industrial Cybersecurity</div>
+            <div class="track-content">
+                <h6 style="color: white; font-weight:bolder">TRACK      D</h6>
+                <h2>Industrial Cybersecurity</h2>
+
+                <p><b>HIGH PRIORITY FOR TAMIL NADU – 2026</b></p>
+
+                <p><b>Tamil Nadu Focus Industries:</b> Manufacturing IT/OT Systems, Automotive Production Lines</p>
+
+                <p><b>Key TN-Based Companies / Clusters:</b> Hyundai IT Systems, Renault-Nissan Digital, Bosch India (Coimbatore), L&T Technology Services (Chennai)</p>
+
+                <p><b>Problem Focus:</b> Cybersecurity vulnerabilities in OT/industrial networks.</p>
+
+                <p><b>Expected Output:</b> Industrial threat detection or SOC dashboard prototype.</p>
+            </div>
+        </div>
+
+        <!-- TRACK E -->
+        <div class="track">
+            <div class="track-title">Sustainability &<br> Green Manufacturing</div>
+            <div class="track-content">
+                <h6 style="color: white; font-weight:bolder">TRACK  E</h6>
+                <h2>Sustainability & Green Manufacturing in TN</h2>
+
+                <p><b>HIGH PRIORITY FOR TAMIL NADU – 2026</b></p>
+
+                <p><b>Tamil Nadu Focus Industries:</b> Renewable Energy, Automotive ESG Compliance, Industrial Energy Efficiency</p>
+
+                <p><b>Key TN-Based Companies / Clusters:</b> Tata Power Renewables, Adani Green, Siemens Energy, TVS Sustainability Division</p>
+
+                <p><b>Problem Focus:</b> Carbon footprint reduction, energy monitoring, ESG reporting automation.</p>
+
+                <p><b>Expected Output:</b> Carbon tracking or ESG analytics dashboard.</p>
+            </div>
+        </div>
+
+        <!-- TRACK F -->
+        <div class="track">
+            <div class="track-title">SkillTech & Workforce <br> Analytics</div>
+            <div class="track-content">
+                <h6 style="color: white; font-weight:bolder">TRACK  F</h6>
+                <h2>SkillTech & Workforce Analytics</h2>
+
+                <p><b>Tamil Nadu Focus Industries:</b> Automotive Skill Development, Polytechnic & ITI Ecosystem</p>
+
+                <p><b>Key TN-Based Companies / Clusters:</b> TN AUTO Skills Development Centers, Government ITIs, Industry Skill Councils, Naan Mudhalvan-linked institutions</p>
+
+                <p><b>Problem Focus:</b> Skill gap identification in automotive manufacturing and EV ecosystem.</p>
+
+                <p><b>Expected Output:</b> AI-based workforce skill gap analytics and recommendation engine</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+    
+
+    <section id="details">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Information</span>
+            <h2 class="section-title">Event Breakdown</h2>
+        </div>
+        <div class="details-grid">
+            <div class="detail-item reveal reveal-left">
+                <div class="detail-icon"><i class="fa-regular fa-calendar-days"></i></div>
+                <div class="detail-text">
+                    <h4>Dates</h4>
+                    <p>19–20 March 2026<br>Reporting time: 8:00 AM</p>
+                </div>
+            </div>
+            <div class="detail-item reveal reveal-right" style="transition-delay: 0.1s;">
+                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="detail-text">
+                    <h4>Venue</h4>
+                    <p>Dr. Remibai Jeppiaar Auditorium, Hall 2</p>
+                </div>
+            </div>
+            <div class="detail-item reveal reveal-left" style="transition-delay: 0.2s;">
+                <div class="detail-icon"><i class="fa-solid fa-stopwatch"></i></div>
+                <div class="detail-text">
+                    <h4>Duration</h4>
+                    <p>24 Hours Hackathon<br>Non-stop coding & deployment</p>
+                </div>
+            </div>
+            <div class="detail-item reveal reveal-right" style="transition-delay: 0.3s;">
+                <div class="detail-icon"><i class="fa-solid fa-award"></i></div>
+                <div class="detail-text">
+                    <h4>Perks</h4>
+                    <p>Top Internship Offers, Merit Awards, Cash Prizes & E-Certificates </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="collab-section">
+  <h2 class="section-title">Our Collaborators</h2>
+
+  <div class="collab-wrapper">
+
+    <button class="nav left">&#10094;</button>
+    <button class="nav right">&#10095;</button>
+
+    <div class="collab-track">
+
+      <!-- 1 -->
+      <div class="item">
+        <img src="./startup.png">
+        <img src="./startup.png" class="bg-logo" />
+        <h3>Sathyabama Startup Cell</h3>
+        <p>Innovation hub nurturing entrepreneurship through mentorship and funding.</p>
+        <a href="https://www.sathyabama.ac.in/entrepreneurship_development_cell" target="_blank">Visit Website →</a>
+      </div>
+
+      <!-- 2 -->
+      <div class="item">
+        <img src="./atribs.png">
+        <img src="./atribs.png" class="bg-logo" />
+        <h3>Atribs Global Services</h3>
+        <p>Application development and IT solutions specialists.</p>
+        <a href="https://www.atribsglobal.com/" target="_blank">Visit Website →</a>
+      </div>
+
+      <!-- 3 -->
+      <div class="item">
+        <img src="./tan.png">
+        <img src="./tan.png" class="bg-logo" />
+        <h3>TANCAM</h3>
+        <p>Advanced manufacturing, Industry 4.0 & digital engineering support.</p>
+        <a href="https://www.tancam.in/" target="_blank">Visit Website →</a>
+      </div>
+
+      <!-- 4 -->
+      <div class="item">
+        <img src="./bluewind.png">
+        <img src="./bluewind.png" class="bg-logo" />
+        <h3>Bluewind Innovations</h3>
+        <p>Sustainable air circulation and energy-efficient solutions.</p>
+        <a href="https://bluewindinnovation.com/about/" target="_blank">Visit Website →</a>
+      </div>
+
+      <!-- 5 -->
+      <div class="item">
+        <img src="./tnauto.png">
+        <img src="./tnauto.png" class="bg-logo" />
+        <h3>TN Auto Skills</h3>
+        <p>Automotive skill development and workforce enablement.</p>
+        <a href="https://tnautoskills.org/about/" target="_blank">Visit Website →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="regist">
+<div class="section-header">
+            <span class="section-subtitle">Register</span>
+            <h2 class="section-title">Ready To Innovate?</h2>
+        </div>
+        <section class="register-section">
+    <div class="register-card">
+
+        <h2 class="font-weight:bold">Join the innovation </h2>
+        <p class="subtitle">
+            Scan the QR code or use the link to register your team
+        </p>
+
+        <div class="register-inner">
+
+            <!-- QR -->
+            <div class="qr-box">
+                <img src="./qr.jpeg" alt="QR Code">
+                <span>Scan to Register</span>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="register-actions">
+                <a class="btn btn-primary " href="https://forms.gle/fbmGwviynyVmDxWX9" target="_blank" class="primary-btn">
+                    Register Now →
+                </a>
+                <button class="secondary-btn" onclick="copyLink()">
+                    Copy Registration Link
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+</section>
+
+    <footer>
+        <div class="footer-logo">IIH'26</div>
+        
+            <div class="social-links">
+            
+             <!-- EMAIL -->
+    <a href="mailto:industryinnovation.26hackathon@gmail.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/industry.innovation.26?igsh=cDdmbjg5YXd1bzZ0" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <!-- LOCATION -->
+    <a href="https://maps.app.goo.gl/yVrB74okb7PUdioY6" target="_blank">
+        <i class="fa-solid fa-location-dot"></i>
+        <!-- WHATSAPP + CALL -->
+<a href="https://wa.me/916385721472" target="_blank" title="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="tel:+916385721472" title="Call">
+    <i class="fa-solid fa-phone"></i>
+</a>
+
+<!-- SECOND NUMBER (CALL ONLY) -->
+<a href="tel:+919962083189" title="Call">
+    <i class="fa-solid fa-phone"></i>
+</a>
+    </a>
+        </div>
+
+   
+
+</div>
+        <p>© 2026 Industry'26 Innovation Hackathon | Startup Cell | SathyabamaInstitute of Science & Technology</p>
+    </footer>
+<script src="./script.js"></script>
+    <script>
+        
+        
+    </script>
+</body>
+
+</html>
