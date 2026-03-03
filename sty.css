@@ -1753,4 +1753,18 @@ body {
     backdrop-filter: none;
     box-shadow: none;
 }
+
 }
+@media (max-width: 900px) {
+
+    .track-title {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        writing-mode: horizontal-tb;
+        text-align: center;
+        width: 100%;
+        padding: 20px 15px 10px 15px;
+        font-size: 20px;
+    }
