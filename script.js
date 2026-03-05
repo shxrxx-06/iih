@@ -193,7 +193,7 @@ function animateNetwork() {
 }
 
 animateNetwork();
-const ca = document.querySelectorAll(".track-card");
+const ca = document.querySelectorAll(".track");
 
 ca.forEach(card => {
   card.addEventListener("click", () => {
@@ -300,6 +300,29 @@ tracks.forEach(track => {
         track.classList.toggle("active");
 
     });
+
+});
+
+}
+/* MOBILE TRACK EXPAND SYSTEM */
+
+if(window.innerWidth <= 768){
+
+const tracks = document.querySelectorAll(".track");
+
+tracks.forEach(track => {
+
+track.addEventListener("click", () => {
+
+tracks.forEach(t => {
+if(t !== track){
+t.classList.remove("active");
+}
+});
+
+track.classList.toggle("active");
+
+});
 
 });
 
