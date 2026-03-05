@@ -1825,3 +1825,57 @@ body {
 }
 
 }
+/* ================= MOBILE FIX FOR INNOVATION TRACKS ================= */
+
+@media (max-width:768px){
+
+.tracks-container{
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    gap:16px;
+}
+
+/* Each card */
+.track{
+    flex:none !important;
+    height:90px;
+    width:100%;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+/* FIX TEXT ORIENTATION */
+.track-title{
+    writing-mode:horizontal-tb !important;
+    transform:translate(-50%,-50%) !important;
+    font-size:16px;
+    letter-spacing:1px;
+}
+
+/* hide description initially */
+.track-content{
+    opacity:0;
+    max-height:0;
+    overflow:hidden;
+    position:relative;
+    left:auto;
+    top:auto;
+    transform:none;
+}
+
+/* expanded card */
+.track.active{
+    height:auto;
+    padding:20px;
+}
+
+/* show content when clicked */
+.track.active .track-content{
+    opacity:1;
+    max-height:500px;
+    margin-top:10px;
+}
+
+}
+
