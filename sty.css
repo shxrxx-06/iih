@@ -1,4 +1,4 @@
-  /* CSS Reset and Variables */
+/* CSS Reset and Variables */
         :root {
             --bg-dark: #05030f;
             --primary: #8b5cf6;
@@ -1709,27 +1709,34 @@ body {
 }
 @media (max-width: 768px) {
 
-.register-box {
+.register-card {
     padding: 24px;
     text-align: center;
 }
 
-.register-content {
+.register-inner {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .qr-box img {
-    width: 120px;
+    width: 140px;
 }
 
 .register-actions {
     width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
 }
 
 .register-actions a,
 .register-actions button {
-    width: 100%;
+    width: auto;
+    flex: 1;
+    font-size: 14px;
+    padding: 10px 12px;
+    white-space: nowrap;
 }
 }
 @media (max-width: 768px) {
@@ -1753,7 +1760,6 @@ body {
     backdrop-filter: none;
     box-shadow: none;
 }
-
 }
 @media (max-width: 900px) {
 
@@ -1768,64 +1774,150 @@ body {
         padding: 20px 15px 10px 15px;
         font-size: 20px;
     }
-/* ================= MOBILE TRACK FIX ================= */
-
+}
 @media (max-width: 768px) {
 
-.tracks-container{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    gap:16px;
-}
+    .register-actions {
+        width: 100%;
+        /* Keep ROW flex, but force buttons to stack (wrap) */
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+  
+    .register-actions a,
+    .register-actions button {
+        /* one-per-line under the QR */
+        width: 100%;
+        flex: 0 0 100%;
+        font-size: 14px;
+        padding: 10px 12px;
+        white-space: normal;
+    }
+  }
+  /* =========================================================
+   MOBILE TRACKS (PC-LIKE LOOK, NO OVERLAP) — REPLACEMENT
+   Paste at END of sty.css (remove previous mobile track fix)
+========================================================= */
+@media (max-width: 768px) {
 
-/* SMALL RECTANGLE CARD */
-.track{
-    flex: none;
-    height:90px;
-    width:100%;
-    transition: all 0.35s ease;
-}
-
-/* TITLE NORMAL (NOT VERTICAL) */
-.track-title{
-    writing-mode:horizontal-tb;
-    transform:translate(-50%,-50%);
-    font-size:16px;
-    height: auto;
-}
-
-/* HIDE CONTENT INITIALLY */
-.track-content{
-    opacity:0;
-    pointer-events: none;
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    max-height:0;
-    overflow: hidden;
-}
-
-/* WHEN ACTIVE (CLICKED) */
-.track.active{
-    height: auto;
-    padding:20px;
-}
-
-.track.active .track-content{
-    opacity:1;
-    pointer-events: auto;
-    max-height:500px;
-    margin-top:12px;
-}
-
-.track.active .track-title{
-    opacity:1;
-}
-
-}
-/* ================= MOBILE TRACK FIX ================= */
+    .tracks-section{
+      padding: 100px 5% 80px;
+    }
+  
+    /* keep flex row, but stack using wrap (still "row flex") */
+    .tracks-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto !important;
+      gap: 16px;
+    }
+  
+    /* each track takes full width -> no squeeze -> no overlap */
+    .track{
+      flex: 0 0 100% !important;
+      width: 100%;
+      min-height: 210px;
+      height: auto !important;
+      transform: none !important;
+      border-radius: 18px;
+      box-shadow: 0 0 26px rgba(139,92,246,0.18);
+    }
+  
+    /* remove hover expansion issues on touch devices */
+    .track:hover{
+      flex: 0 0 100% !important;
+      transform: none !important;
+    }
+  
+    /* keep the PC style overlay but make it stronger for readability */
+    .track::before{
+      background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.92) 10%,
+        rgba(0,0,0,0.68) 55%,
+        rgba(0,0,0,0.35) 100%
+      ) !important;
+    }
+  
+    /* Instead of vertical rotated title (causes alignment issues),
+       show title like PC expanded mode */
+    .track-title{
+      position: absolute !important;
+      inset: auto !important;
+      top: 18px !important;
+      left: 16px !important;
+  
+      transform: none !important;
+      writing-mode: horizontal-tb !important;
+  
+      height: auto !important;
+      width: calc(100% - 32px) !important;
+  
+      display: block !important;
+      padding: 0 !important;
+      text-align: left !important;
+  
+      font-size: 18px !important;
+      line-height: 1.25;
+      letter-spacing: 1px;
+      opacity: 1 !important;
+  
+      z-index: 3;
+    }
+  
+    /* Don’t hide title on hover (hover doesn’t work nicely on mobile) */
+    .track:hover .track-title{
+      opacity: 1 !important;
+    }
+  
+    /* Make content act like the "expanded" panel always */
+    .track-content{
+      position: relative !important;
+      left: auto !important;
+      top: auto !important;
+      transform: none !important;
+  
+      opacity: 1 !important;
+      z-index: 3;
+  
+      padding: 58px 16px 18px;   /* space for title */
+      max-width: 100% !important;
+  
+      max-height: 260px;         /* avoid huge cards */
+      overflow: auto;            /* scroll inside if long */
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    /* always visible */
+    .track:hover .track-content{
+      opacity: 1 !important;
+    }
+  
+    .track-content h2{
+      font-size: 18px;
+      margin: 8px 0 12px;
+      line-height: 1.25;
+    }
+  
+    .track-content p{
+      font-size: 13px;
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+  
+    /* nicer scrollbar (optional; safe) */
+    .track-content::-webkit-scrollbar{
+      width: 6px;
+    }
+    .track-content::-webkit-scrollbar-thumb{
+      background: rgba(255,255,255,0.18);
+      border-radius: 10px;
+    }
+  }
+  /* ================= MOBILE TRACK FIX ================= */
 
 @media (max-width: 768px) {
 
@@ -1882,4 +1974,7 @@ body {
 }
 
 }
+
+}
+
 
