@@ -193,7 +193,7 @@ function animateNetwork() {
 }
 
 animateNetwork();
-const ca = document.querySelectorAll(".track-cards");
+const ca = document.querySelectorAll(".track-card");
 
 ca.forEach(card => {
   card.addEventListener("click", () => {
@@ -279,7 +279,6 @@ function copyLink() {
     const link = "https://forms.gle/fbmGwviynyVmDxWX9";
     navigator.clipboard.writeText(link);
     alert("Registration link copied!");
-
 }
 /* ================= MOBILE TRACK ACCORDION ================= */
 
@@ -305,31 +304,6 @@ tracks.forEach(track => {
 
 }
 
-
-}
-/* ================= MOBILE TRACK ACCORDION ================= */
-
-if (window.innerWidth <= 768) {
-
-const tracks = document.querySelectorAll(".track");
-
-tracks.forEach(track => {
-
-    track.addEventListener("click", () => {
-
-        tracks.forEach(t => {
-            if(t !== track){
-                t.classList.remove("active");
-            }
-        });
-
-        track.classList.toggle("active");
-
-    });
-
-});
-
-}
 
 
 
