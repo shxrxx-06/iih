@@ -1768,3 +1768,60 @@ body {
         padding: 20px 15px 10px 15px;
         font-size: 20px;
     }
+/* ================= MOBILE TRACK FIX ================= */
+
+@media (max-width: 768px) {
+
+.tracks-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap:16px;
+}
+
+/* SMALL RECTANGLE CARD */
+.track{
+    flex: none;
+    height:90px;
+    width:100%;
+    transition: all 0.35s ease;
+}
+
+/* TITLE NORMAL (NOT VERTICAL) */
+.track-title{
+    writing-mode:horizontal-tb;
+    transform:translate(-50%,-50%);
+    font-size:16px;
+    height: auto;
+}
+
+/* HIDE CONTENT INITIALLY */
+.track-content{
+    opacity:0;
+    pointer-events: none;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    max-height:0;
+    overflow: hidden;
+}
+
+/* WHEN ACTIVE (CLICKED) */
+.track.active{
+    height: auto;
+    padding:20px;
+}
+
+.track.active .track-content{
+    opacity:1;
+    pointer-events: auto;
+    max-height:500px;
+    margin-top:12px;
+}
+
+.track.active .track-title{
+    opacity:1;
+}
+
+}
