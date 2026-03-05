@@ -307,5 +307,29 @@ tracks.forEach(track => {
 
 
 }
+/* ================= MOBILE TRACK ACCORDION ================= */
+
+if (window.innerWidth <= 768) {
+
+const tracks = document.querySelectorAll(".track");
+
+tracks.forEach(track => {
+
+    track.addEventListener("click", () => {
+
+        tracks.forEach(t => {
+            if(t !== track){
+                t.classList.remove("active");
+            }
+        });
+
+        track.classList.toggle("active");
+
+    });
+
+});
+
+}
+
 
 
