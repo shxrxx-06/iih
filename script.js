@@ -193,7 +193,7 @@ function animateNetwork() {
 }
 
 animateNetwork();
-const ca = document.querySelectorAll(".track");
+const ca = document.querySelectorAll(".track-cards");
 
 ca.forEach(card => {
   card.addEventListener("click", () => {
@@ -327,3 +327,4 @@ track.classList.toggle("active");
 });
 
 }
+
