@@ -1974,7 +1974,19 @@ body {
 }
 
 }
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.logo-img{
+    height: 60px;
+    width: auto;
+}
 
 }
+
 
 
