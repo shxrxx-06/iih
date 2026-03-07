@@ -1983,10 +1983,11 @@ body {
 
 .logo-img{
     height: 60px;
-    width: 150px;
+    width: auto;
 }
 
 }
+
 
 
 
