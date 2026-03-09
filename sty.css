@@ -2009,6 +2009,19 @@ body {
     object-fit: contain;
     margin-top: -20px;     /* pulls logo closer to heading */
 }
+/* ===== FIX POWERED BY HEADING GAP ===== */
+
+.powered-by-hero {
+    margin-top: -40px;   /* pull section upward */
+}
+
+.powered-by-hero span {
+    margin-top: 10px;    /* push heading down slightly */
+}
+
+.powered-by-hero img {
+    margin-top: -15px;   /* keep logo close to heading */
+}
 
 
 
