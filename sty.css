@@ -2013,7 +2013,7 @@ body {
     flex-direction:column;
     align-items:center;
     margin-top:35px; /* pushes it below caption */
-    margin-bottom:25px;
+    margin-bottom:10px;
 }
 
 .powered-by-hero img{
@@ -2022,6 +2022,7 @@ body {
     margin-top:10px;
     object-fit:contain;
 }
+
 
 
 
