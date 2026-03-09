@@ -1993,7 +1993,7 @@ body {
     align-items:center;
     gap:8px;
     margin-top:12px;
-    margin-bottom:30px;
+    margin-bottom:15px;
 }
 
 .powered-by-hero span{
@@ -2022,6 +2022,7 @@ body {
     margin-top:10px;
     object-fit:contain;
 }
+
 
 
 
