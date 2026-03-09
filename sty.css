@@ -1989,8 +1989,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px;
-    margin-top: 5px;
+    gap: 0;                /* remove flex gap */
+    margin-top: 0;         /* remove top spacing */
     margin-bottom: 0;
 }
 
@@ -2000,19 +2000,15 @@ body {
     font-weight: 800;
     letter-spacing: 1px;
     margin: 0;
+    line-height: 1;        /* tighter heading spacing */
 }
 
 .powered-by-hero img{
     width: 600px;
     max-width: 95%;
     object-fit: contain;
-    margin-top: -10px;   /* moves logo upward */
+    margin-top: -20px;     /* pulls logo closer to heading */
 }
-.powered-by-hero span{
-    margin-bottom: 0;
-}
-
-
 
 
 
