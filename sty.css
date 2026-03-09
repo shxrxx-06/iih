@@ -2023,6 +2023,11 @@ body {
     object-fit:contain;
 }
 
+.hero p{
+    margin-bottom: 0;
+}
+
+
 
 
 
