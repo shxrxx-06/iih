@@ -2012,7 +2012,7 @@ body {
     display:flex;
     flex-direction:column;
     align-items:center;
-    margin-top:35px; /* pushes it below caption */
+    margin-top:5px; /* pushes it below caption */
     margin-bottom:10px;
 }
 
@@ -2022,6 +2022,7 @@ body {
     margin-top:5px;
     object-fit:contain;
 }
+
 
 
 
