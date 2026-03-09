@@ -2008,6 +2008,10 @@ body {
     object-fit: contain;
     margin-top: -10px;   /* moves logo upward */
 }
+.powered-by-hero span{
+    margin-bottom: 0;
+}
+
 
 
 
