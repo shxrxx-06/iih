@@ -352,7 +352,7 @@
             font-size: clamp(3.5rem, 7vw, 6.5rem);
             font-weight: 900;
             line-height: 1.05;
-            margin-bottom: 48px;
+            margin-bottom: 24px;
             letter-spacing: -2px;
             animation: fadeUp 1s 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
             opacity: 0;
@@ -2013,6 +2013,7 @@ body {
 .powered-by-hero{
     margin-top: -10px;
 }
+
 
 
 
