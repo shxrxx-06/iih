@@ -1985,13 +1985,11 @@ body {
     height: 60px;
     width: auto;
 }
-
-
 .powered-by-hero{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 2px;
     margin-top: 5px;
     margin-bottom: 0;
 }
@@ -2007,9 +2005,10 @@ body {
 .powered-by-hero img{
     width: 600px;
     max-width: 95%;
-    margin: 0;
     object-fit: contain;
+    margin-top: -10px;   /* moves logo upward */
 }
+
 
 
 
