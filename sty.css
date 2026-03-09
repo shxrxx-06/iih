@@ -352,7 +352,7 @@
             font-size: clamp(3.5rem, 7vw, 6.5rem);
             font-weight: 900;
             line-height: 1.05;
-            margin-bottom: 24px;
+            margin-bottom: 8px;
             letter-spacing: -2px;
             animation: fadeUp 1s 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
             opacity: 0;
@@ -380,7 +380,7 @@
             font-size: clamp(1.1rem, 2vw, 1.4rem);
             color: var(--text-muted);
             max-width: 650px;
-            margin-bottom: 15px;
+            margin-bottom: 0px;
             font-weight: 400;
             animation: fadeUp 1s 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
             opacity: 0;
@@ -2009,19 +2009,11 @@ body {
     object-fit: contain;
     margin-top: -20px;     /* pulls logo closer to heading */
 }
-/* ===== FIX POWERED BY HEADING GAP ===== */
 
-.powered-by-hero {
-    margin-top: -40px;   /* pull section upward */
+.powered-by-hero{
+    margin-top: -10px;
 }
 
-.powered-by-hero span {
-    margin-top: 10px;    /* push heading down slightly */
-}
-
-.powered-by-hero img {
-    margin-top: -15px;   /* keep logo close to heading */
-}
 
 
 
