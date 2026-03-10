@@ -1985,39 +1985,37 @@ body {
     height: 60px;
     width: auto;
 }
-.powered-by-hero{
+.powered-by-hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-top: 25px;   /* pushes it BELOW the caption */
-    gap: 8px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    gap: 12px;
 }
 
-.powered-by-hero span{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+.powered-label {
+    font-size: clamp(2rem, 4vw, 3.2rem);
     font-weight: 800;
-    letter-spacing: 1px;
-
-    margin-bottom: -15px; /* brings logo closer */
+    letter-spacing: -1px;
+    line-height: 1.2;
+    background: linear-gradient(to right, #fff, var(--text-muted));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.powered-by-hero img{
-    width: 420px;
-    max-width: 95%;
+.powered-by-hero img {
+    width: 180px;
+    max-width: 90%;
     object-fit: contain;
-
-    margin-top: 25px;
+    opacity: 0.9;
+    filter: brightness(1.15);
+    transition: opacity 0.3s ease;
 }
 
-
-
-
-
-
-
-
+.powered-by-hero img:hover {
+    opacity: 1;
+}
 
 
 
